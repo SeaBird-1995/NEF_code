@@ -108,7 +108,7 @@ def get_sigma_from_nerf(ckpt_path, N=128):
     return sigma
 
 
-target_path = "ABC_point_clouds"
+target_path = "ABC_point_clouds_ours"
 os.makedirs(target_path, exist_ok=True)
 
 ckpt_dir = "../ckpts_ABC_examples"

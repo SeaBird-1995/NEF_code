@@ -19,7 +19,7 @@ for i in range(0, 10000):
     ckpt_name = ckpts[-1]
     ckpt_path = os.path.join(ckpt_dir, ckpt_name)
     command = "python eval.py --root_dir " + os.path.join(dataset_dir, scene) + \
-              " --dataset_name blender --img_wh 400 400 --N_importance 64 --split video " \
+              " --dataset_name blender --img_wh 400 400 --N_importance 64 --split val " \
               "--ckpt_path " + ckpt_path + " --scene_name " + scene     # + " --save_depth"
 
     print(command)
